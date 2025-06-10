@@ -1,0 +1,56 @@
+<!DOCTYPE html> <!--Estructura html-->
+<html lang="en">
+<head>  
+  <meta charset="UTF-8">  <!--page metadata-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Responsive website with flexbox and grid lists" >
+  <title>Portfolio Adrian Arboleda</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Header section with navigation -->
+  <header id="home" class="header">
+    <h1 class="header__title">Portfolio Adrian Arboleda</h1>
+    <nav class="header__nav">
+      <ul class="nav__list">  <!--Navigation list-->
+        <li class="nav__item"><a class="nav__link" href="index.html">About Me</a></li>
+        <li class="nav__item"><a class="nav__link" href="pages/projects.html">Projects</a></li>
+        <li class="nav__item"><a class="nav__link" href="pages/contac.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+      <!--section personal-->
+    <section class="aboutme">
+
+        <section class="aboutme__personal"> <!--photo-->
+            <div class="aboutme__personal__box"> 
+              <a href="assets/adrian.jpeg" target="_blank"><img class="aboutme__personal__box__img" src="assets/adrian.jpeg" alt="Adrian vestido de traje" title="Clic para ver foto"></a>
+            </div>
+            <div class="aboutme__personal__box2"> <!--presentation -->
+              <h2>About Me</h2>
+              <p>Hello, I am Adrian Arboleda.</p>
+              <p>I am a 26-year-old currently training to become a software developer, with a technical background in motorcycle mechanics. I am known for being responsible, efficient, and focused on delivering high-quality work.</p>
+              <p>Currently, I am developing my skills in programming and digital technologies, with a clear goal of becoming a bilingual professional in the field of software development. I am passionate about learning, adapting to challenges, and constantly growing in the tech world.</p>
+            </div>
+        </section>
+
+        <section class="aboutme_skills"> <!--section skills-->
+            <h2>Technical Skills</h2>
+            <ul class="aboutme_skills__list">
+                <li>Operating systems management.</li>
+                <li>Use of design software.</li>
+                <li>Digital platform management.</li>
+                <li>Office tools proficiency.</li>
+                <li>Programming knowledge</li>
+            </ul>
+        </section>
+    </section>
+  </main>  
+  
+    <footer class="footer">  <!--footer-->
+        <p class="footer__copyright">&copy; 2025 Adrian Arboleda. </p>
+  </footer>
+</body>
+</html>

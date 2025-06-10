@@ -1,0 +1,343 @@
+/* Basic CSS reset  */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* Variable declaration*/
+:root {
+  --primary-color: #d9e1ea;
+  --secondary-color: #668ca2;
+  --color-withe: #ffffff;
+  --color-black: #000000;
+  --font-family: "Arial", sans-serif;
+}
+
+/* Body styles*/
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(assets/bg-imge.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: var(--font-family);
+}
+
+/* Header with Flexbox */
+.header {
+  color: var(--color-withe);
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px;
+}
+
+.header__title {
+  font-size: 2.5rem;
+}
+
+/* Styles for navigation*/
+.nav__list {
+  display: flex;
+  list-style: none;
+  font-size: large;
+  gap: 25px;
+}
+
+.nav__item {
+  transition: transform 0.3s ease;
+}
+
+.nav__item:hover {
+  transform: scale(1.3);
+  text-shadow: 0 0 5px;
+  font-weight: bold;
+}
+
+.nav__link {
+  color: var(--color-withe);
+  text-decoration: none;
+}
+/*------------------Style About Me----------------------------*/
+
+.aboutme{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutme__personal{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-auto-rows: 600px;
+  color: var(--color-withe);
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutme__personal__box{
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.aboutme__personal__box__img{
+  max-width: 320px;
+  max-height: 460px;
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 0 6px var(--color-withe);
+  animation: mover-foto 2s ease-in-out infinite alternate;
+}
+
+.aboutme__personal__box2{
+  width: 60%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  line-height: 20px;
+}
+
+.aboutme_skills{
+  color: var(--color-withe);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.aboutme_skills__list{
+  line-height: 30px;
+  font-size: larger;
+  margin-bottom: 80px;
+}
+
+/*----------------------------- projetcs -------------------------- */
+.projects{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.projects__title {
+  text-align: center;
+  color: var(--color-withe);
+  margin-block: 20px ;
+  font-size: 2rem;
+}
+
+/* Grid layout for services */
+.projects__card {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-auto-rows: 380px;
+  gap: 20px 50px;
+  margin-bottom: 30px;
+}
+
+/* Styles for each card*/
+.projects__card--item {
+  background-color: var(--color-withe);
+  border: 1px solid var(--color-black);
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--color-black);
+  text-align: center;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.projects__card--item:hover {
+  transform: scale(1.1);
+}
+
+.card__img{
+  width: 100%;
+  border-radius: 6px;
+  height: 50%;
+  box-shadow: 0px 0px 10px;
+}
+
+.card__h3{
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
+.card__description{
+  width: 100%;
+  height: 25%;
+  text-align: center;
+}
+
+.card__link{
+  text-decoration: none;
+  background-color: #2263ca;
+  color: var(--color-withe);
+  font-size: 1.6rem;
+  width: 40%;
+  border-radius: 5px;
+}
+
+.card__link:hover{
+  color: #54d848;
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  background: var(--secondary-color);
+  color: var(--color-withe);
+  text-align: center;
+  padding: 8px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/*-------------------------Contac Styles-----------------*/
+
+.contact{
+  max-width: 1366px;
+  height: 70vh;
+  margin: 0 auto;
+  color: var(--color-withe);
+  display: flex;
+  gap: 40px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact__contact{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact__contact__title{
+  font-size: 2rem;
+}
+
+.contact__contact__box{
+  display: flex;
+  flex-direction: column;
+  font-size: larger;
+  gap: 20px;
+}
+
+.contact__form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact__form__title{
+  font-size: 1.8rem;
+}
+
+.contact__form__form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact__form__form__data{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 8px;
+  gap: 20px;
+}
+
+.contact__form__form__button{
+  padding: 10px;
+  border-radius: 4px;
+  width: 50%;
+  font-size: larger;
+  color: rgb(15, 211, 41);
+  transition: transform 0.6s ease;
+}
+
+.contact__form__form__button:hover{
+  font-weight: bold;
+  color: #25b418;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* Responsive design with Media Queries */
+
+/* Responsive design for tablets*/
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 0;
+  }
+  .header {
+    flex-direction: column;
+  }
+  
+  .nav__list {
+    margin-block: 10px;
+  }
+
+  .aboutme__personal{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .aboutme__personal__box2{
+    margin: 0 auto;
+  }
+
+  .projects__card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .contact{
+    flex-direction: column;
+    height: 100vh;
+  }
+
+}
+
+/* Responsive design for mobile phones*/
+@media (max-width: 480px) {
+  body {
+    padding-bottom: 0;
+  }
+  .projects__card {
+    grid-template-columns: 1fr;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .nav__list {
+    margin-block: 10px;
+    flex-direction: row;
+  }
+
+  .footer{
+    position: relative;
+  }
+}
+
+/*-------------animation------------------------*/
+@keyframes mover-foto {
+  0% {
+    transform: translateX(50px)
+  }
+
+  100% {
+    transform: translateX(-50px);
+  }
+}

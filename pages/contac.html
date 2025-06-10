@@ -1,0 +1,63 @@
+<!DOCTYPE html> <!--Estructura html-->
+<html lang="en">
+<head>  
+  <meta charset="UTF-8">  <!--page metadata-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Responsive website with flexbox and grid lists" >
+  <title>Portfolio Contact</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Header section with navigation -->
+  <header id="home" class="header">
+    <h1 class="header__title">Portfolio Adrian Arboleda</h1>
+    <nav class="header__nav">
+      <ul class="nav__list">  <!--Navigation list-->
+        <li class="nav__item"><a class="nav__link" href="../index.html">About Me</a></li>
+        <li class="nav__item"><a class="nav__link" href="projects.html">Projects</a></li>
+        <li class="nav__item"><a class="nav__link" href="contac.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="contact"> <!--section contact-->
+        <section class="contact__contact">
+            <h2 class="contact__contact__title">Contact</h2> 
+            <div class="contact__contact__box"> <!--Personal information-->
+                <span><strong>Name:</strong> Adrian Arboleda</span>
+                <span><strong>Contact:</strong> 3006165813</span>
+                <span><strong>Email:</strong> Adri1ann32323@gmail.com</span>
+            </div>
+        </section>
+        <section class="contact__form"> <!--form contac-->
+            <h2 class="contact__form__title">Form Contact</h2>
+            <form class="contact__form__form" method="post" action="#">
+                <fieldset class="contact__form__form__data">
+                    <legend><h3>Personal information</h3></legend>
+                    <label>Name:
+                        <input type="text" name="nombre" placeholder="Adrian Arboleda" required d>
+                    </label>
+            
+                    <label>Email:
+                        <input type="email" name="email" placeholder="adr1ann32323@gmail.com" required>
+                    </label>
+                
+                    <label>Contact:
+                        <input type="tel" name="contacto" placeholder="3006165813" required>
+                    </label>
+                </fieldset>
+                <button class="contact__form__form__button">Send contact</button>
+            </form>
+        </section>
+
+    </section>
+  </main>
+
+  <footer class="footer"> <!--footer-->
+        <p class="footer__copyright">&copy; 2025 Adrian Arboleda. </p>
+  </footer>
+</body>
+</html>
