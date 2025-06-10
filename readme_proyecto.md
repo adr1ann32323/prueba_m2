@@ -4,7 +4,7 @@ Este es un portafolio personal Web, desarrollado con HTML y CSS, que incluye sec
 
 Estructura del Proyecto:
 
-📂 prueba_m2.zip
+📂 prueba_m2
 |--- index.html
 |--- projects.html
 |--- contac.html
