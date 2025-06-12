@@ -21,7 +21,7 @@ Estructura del Proyecto:
 
 Cómo abrir el proyecto en tu navegador:
 
-Opción 1: Abrir desde el explorador de archivos
+Opción 1: Abrir desde el explorador de archivos.
 
 En Windows:
     
@@ -32,7 +32,7 @@ En Linux:
     
 Abre la carpeta donde está index.html.
 
-Opción 2: Abrir desde Visual Studio Code
+Opción 2: Abrir desde Visual Studio Code.
     
 Abre Visual Studio Code.
 Selecciona File > Open Folder… y elige la carpeta del proyecto.
@@ -44,7 +44,7 @@ Si no tienes instalada la extensión Live Server:
 •    Busca “Live Server” y haz clic en Install.
 Una vez instalado, Haz clic derecho dentro del archivo abierto y selecciona “Open with Live Server”.se abrira el navegador mostrando la página principal del portafolio.
 
------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------- 
 | Navegación en la  Interfaz
 |    •    About Me: Presentación personal y habilidades técnicas.
 |    •    Projects: Tarjetas con pequeñas imagenes de proyectos, descripción y enlaces a los proyectos reales.
@@ -64,7 +64,7 @@ Requisitos
 
 
 -------------------------------- Desarrollador -------------------------------------
-nombre: Adrian Arboleda
-Documento: cc: 1026160655
+Nombre: Adrian Arboleda
+Documento: CC: 1026160655
 Email: Adr1ann32323@gmail.com
-clan: Berners Lee
+Clan: Berners Lee
